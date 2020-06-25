@@ -1,0 +1,94 @@
+.new_desing{
+    background-color: #fff;
+    position: relative;
+
+    > div{
+      flex-direction: column;
+
+      &:nth-child(1){
+        padding: 191px 15px 166px;
+       
+      }      
+      .platforms{
+         
+        span{
+          color: #ff6d6d;
+        }
+      }
+  
+       p{
+        max-width: 60%;
+      }
+    }
+
+    .triangle{
+      position: absolute;
+      width: 29%;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: #ececec; 
+      overflow: hidden;
+
+      .pink{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 550px;
+        background-image: linear-gradient(-45deg, #ff6d6d 50%, #ececec 50%);
+        opacity: 0.8;
+      }
+    } 
+
+    @media screen and (max-width:768px){
+        > div {
+          
+          .new{
+            font-size: 24px;
+          }
+          .platforms{
+            font-size: 44px;
+            line-height: 50px;
+            max-width: 450px;
+          }
+          p{
+            font-size: 21px;
+            line-height: 29px;
+            max-width: 450px;
+          }
+      }
+    }
+
+    @media screen and (max-width:700px){
+      > div{
+        &:nth-child(1){
+          padding: 100px 15px 100px;
+        }
+        
+        align-items: center;
+        text-align: center;
+      }
+      .triangle{
+        display: none;
+      }
+    }
+    
+    @media screen and (max-width:400px){
+      > div{
+        text-align: center;
+        
+        .platforms{
+          width: 100%;
+        }
+        p{
+          width: 100%;
+        }
+      }
+      .triangle{
+        display: none;
+      }
+    }
+  }
+
+  
+ 

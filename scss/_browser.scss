@@ -1,0 +1,64 @@
+.browser{
+    background-color: #f6f5f3;
+
+    > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+        .some{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 108px;
+
+          p{
+            text-align: center;
+            max-width: 647px;
+          }
+        }
+
+        .mac_browser{
+          position: relative;
+          width: 100%;
+          max-width: 820px;
+          height: 375px;
+          background: url("../image/browser/browser_scrin.png") center/cover;
+          margin-top: 93px;
+
+          }
+
+    }
+
+    @media screen and (max-width:768px){
+      > div{
+        padding-bottom: 50px;
+      
+      .some {
+          h3{
+           text-align: center;
+          }
+          p{
+            font-size: 21px;
+            line-height: 26px;
+          }
+        }
+        .mac_browser{
+          display: none;
+        }
+      }
+    }
+
+    @media screen  and (max-width:400px){
+      > div{
+        text-align: center;
+
+        .mac_browser{
+          width: 100%;
+          height: 125px;
+        }
+      }
+    }
+  }

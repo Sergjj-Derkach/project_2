@@ -1,0 +1,71 @@
+@import '_vars.scss';
+@import '_header.scss';
+@import '_new_desing';
+@import '_new_feutures';
+@import '_macbook';
+@import '_clients';
+@import '_browser';
+@import '_try_now';
+@import '_footer';
+
+body{
+    font-family: 'Exo', sans-serif;
+    
+    .max_width{
+      position: relative;
+      z-index: 3;
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      padding: 0 15px;	
+
+      .new{
+        font-size: $new_h2_size;
+        color: $new_h2_color;
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+
+      .platforms{
+        color:$text_color;
+        font-size: $new_h3_size;
+        font-weight: 500;
+        margin-bottom: 45px;
+      }
+
+      .donec{
+        opacity: $opacity_text;
+        color: $text_color;
+        font-size: $text_size;
+        font-weight: 500;
+        margin-bottom: 35px;
+        line-height: 26px;
+      }
+    }
+}
+
+
+/* tablet*/
+
+@media screen and (max-width:768px){
+  .max_width{
+      max-width: 768px;
+      padding: 0 15px;
+  }
+  .new{
+    font-size: 24px;
+  }
+  .platforms{
+    font-size: 44px;
+    line-height: 50px;
+  }
+    
+}
+
+@media screen and (max-width:400px){
+  .max_width{
+    max-width: 300px;
+    padding: 0 15px;
+  } 
+
+}	

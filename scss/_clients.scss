@@ -1,0 +1,136 @@
+.clients{
+    background: url("../image/clients/clients_fon.jpg") center/cover;
+    background-color: rgba(0,0,0,.6);
+
+    > div{
+      display: flex;
+      flex-direction: column;
+
+
+      .client{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        padding-top: 110px;
+        .leo{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          margin: 0 30px;
+
+          span{
+            width: 76px;
+            height: 76px;
+            border: 2px solid #1d1e24;
+            background-color: #4e4e5e;
+            margin-bottom: 26px;
+          }
+
+          h3{
+            color: $text_doe_color;
+            font-size: $text_doe_size;
+            font-weight: 500;
+            margin-bottom: 12px;
+          }
+
+          h4{
+            color: $founder_color;
+            font-size: $founder_size;
+            font-weight: 500;
+            margin-bottom: 37px;
+          }
+          p{
+            opacity: $opacity_text;
+            color:$p_color_clients;
+            font-size: $text_size;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 26px;
+          }
+        }
+
+      }
+
+      .partner{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px 80px;
+
+        span{
+          display: block;
+          filter: brightness(0) invert(1);
+
+          &:nth-child(1){
+            width: 135px;
+            height: 65px;
+            background: url("../image/clients/partner_1.png")center/cover;
+          }
+
+          &:nth-child(2){
+            width: 110px;
+            height: 56px;
+            background: url("../image/clients/partner_2.png")center/cover;
+          }
+          &:nth-child(3){
+            width: 98px;
+            height: 85px;
+            background: url("../image/clients/partner_3.png")center/cover;
+          }
+
+          &:nth-child(4){
+            width: 95px;
+            height: 61px;
+            background: url("../image/clients/partner_4.png")center/cover;
+          }
+          &:nth-child(5){
+            width: 120px;
+            height: 54px;
+            background: url("../image/clients/partner_5.png")center/cover;
+          }
+
+        }
+      }
+    }
+
+    @media screen and (max-width:768px){
+      .client {
+        flex-direction: column;
+        align-self: center;
+
+        .leo{
+          max-width: 400px;
+        }
+        div:nth-child(2){
+          margin: 30px auto;
+        }
+      }
+      .partner{
+       padding: 0 30px;
+      }
+    }
+
+    @media screen and(max-width:630px){
+      > div{
+        .partner{
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+      }
+    }
+
+    @media screen and (max-width:400px) {
+      > div{
+        .partner{
+          flex-direction: column;
+          align-items: center;
+        
+          
+          span{
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }

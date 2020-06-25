@@ -1,0 +1,89 @@
+.macbook{
+    position: relative;
+    background-color: #fff;
+    
+    .mac_pink{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 50%;
+      background-image: linear-gradient(45deg, #F57272 50%,#fff 50%);
+    }
+
+    div:nth-child(2){
+      position: relative;
+      z-index: 3;
+      padding: 91px 15px;
+
+      .mac{
+        position: relative;
+        align-self: center;
+        z-index: 1;
+        display: block;
+        width: 640px;
+        height: 353px;
+        background:url("../image/macbook/macbook.png")center/cover;
+      }
+
+      .just{
+        position: relative;
+        z-index: 1;
+        padding: 40px 0 0 15px;
+
+        p{
+          max-width: 492px;
+        }
+      }
+    }
+
+    @media screen and (max-width:768px){
+      div:nth-child(2) .mac{
+        align-self: center;
+        width: 563px;
+        height: 230px;
+        margin-right: 15px;
+      }
+      .just{
+        p{
+          font-size: 21px;
+        }
+      }
+    }
+
+    @media screen and (max-width:700px){
+
+      .mac_pink{
+        display: none;
+      }
+
+      div:nth-child(2){
+        justify-content: center;
+
+        .just{
+          text-align: center;
+        }
+        .mac{
+          display: none;
+        }
+        
+      }
+    }
+    @media screen and(max-width:400px){
+      .mac_pink{
+        display: none;
+      }
+      > div:nth-child(2){
+        flex-direction: column;
+
+        .mac{
+          width: 100%;
+          height: 180px;
+          margin: 0;
+        }
+        .just{
+          text-align: center;
+        }
+      }
+    }
+  }

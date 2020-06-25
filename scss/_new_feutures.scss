@@ -1,0 +1,178 @@
+.new_features{
+    background-color: #f6f5f3;
+    overflow: hidden;
+
+    > div{
+      flex-direction: column;
+      text-align: center;
+
+      .pen{
+        position: absolute;
+        left: -45px;
+        top: 0;
+        display: block;
+        width: 291px;
+        height: 314px;
+        background: url("../image/new_features/pen_holder.png") center/cover;
+      }
+
+      .pictures{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 138px;
+      }
+
+      .earphones{
+        position: absolute;
+        right: -35px;
+        top: 0;
+        display: block;
+        width: 162px;
+        height: 215px;
+        background: url("../image/new_features/earphones.png") center/cover;
+      }
+
+      .flight {
+        display: flex;
+        margin-top: 91px;
+        margin-bottom: 184px;
+
+        > div{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          width: 33%;
+          margin: 0 23px;
+
+          & span{
+            display: block;
+            width: 65px;
+            height: 65px;
+            margin-bottom: 30px;
+          }
+          & h4{
+            color: $text_color;
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 19px;
+          }
+          & p{
+            color: $text_color;
+            opacity: $opacity_text;
+            font-size: $text_size;
+            font-weight: 500;
+            line-height: 26px;
+          }
+
+          .picture{
+            background: url("../image/new_features/picture.png")center/cover;
+          }
+
+          .airplane{
+            background: url("../image/new_features/airplane.png")center/cover;
+          }
+
+          .lightbulb{
+            background: url("../image/new_features/bulb.png")center/cover;
+          }
+        }
+      }
+
+      .coffee_cup{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 15px;
+
+        span{
+          position: absolute;
+          bottom: -22px;
+          right: -75px;
+          display: block;
+          width: 174px;
+          height: 130px;
+          background: url("../image/new_features/Cup.png")center/cover;
+        }	
+      }
+
+    }
+  @media screen and (max-width:768px){
+    > div{
+      .pen{
+        left: -100px;
+      }
+      .new{
+        font-size: 24px;
+      }
+      .platforms{
+        font-size: 44px;
+        margin: 0;
+      }
+      .flight{
+        flex-direction: column;
+        align-items: center;
+
+        > div{
+          width: 70%;
+
+        }
+        .airplane{
+          margin-top: 30px;
+        }
+        .lightbulb{
+          margin-top: 30px;
+        }
+
+        div{
+
+          h4{
+            font-size: 28px;
+          }
+          p{
+            font-size: 20px;
+          }
+          
+        }
+
+      }
+      .coffee_cup{
+        span{
+          bottom: -24px;
+          right: -35px;
+        }
+      }
+    }
+  }
+
+  @media screen and(max-width:630px){
+    > div{
+      .pen{
+        left: -160px;
+      }
+      .earphones{
+        right: -90px;
+      }
+    }
+    
+  }
+
+  @media screen and (max-width:400px){
+    > div{
+      .pen{
+        left: -180px;
+        top: -50px;
+      }
+      
+      .earphones{
+        top:-85px;
+      }
+      .flight{
+        
+        > div{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
